@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html,
+body {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    height: 0;
+    width: 100%;
+}
+
+section {
+    width: 85vw;
+    margin: 2vh auto;
+    padding: 2vw;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 800;
+    background: linear-gradient(90.49deg, #002D6A 0%, #00275A 101.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: 800;
+    background: linear-gradient(90.49deg, #002D6A 0%, #00275A 101.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: x-large;
+    font-weight: 400;
+    background: linear-gradient(90.49deg, #002D6A 0%, #00275A 101.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+footer {
+    margin-top: 15vh;
+    padding-bottom: 10px;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    color: #000;
+    margin-left: 10px;
+}
+
+.nav-link.active {
+    color: #0277bd !important;
+    font-weight: 700;
+}
+
+.acrylic-button {
+    text-decoration: none;
+    color: #fff;
+    background: url("../../assets/img/Backgrounds/noise.png"), linear-gradient(93.07deg, #397ff0af 0%, #004bad98 100%), #397EF0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*Note: backdrop-filter has minimal browser support;*/
+    border-radius: 35px;
+    padding: 9px 22px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.0);
+    border: 2px solid rgba(0, 75, 173, 0.0);
+    transition: all 0.5s;
+    width: fit-content;
+    gap: 10px;
+}
+
+.nav-button svg {
+    margin-right: 7px;
+    height: 18px;
+    width: 18px;
+}
+
+.acrylic-button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.243);
+    border: 2px solid #0277bd;
+}
+
+.acrylic-button img,
+.acrylic-button svg {
+    height: 1rem;
+    width: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7vw;
+}
+
+.footer-links,
+.external-links {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    height: fit-content;
+    max-width: 650px;
+    margin: 1rem;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.contact-card-logo {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1.5rem;
+}
+
+.seperator {
+    display: block;
+    min-height: 100px;
+    background-color: #000;
+    width: 2px;
+    align-self: stretch;
+    justify-self: stretch;
+
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #012b64;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.contact-link img {
+    width: 24px;
+}
+
+.footer-nav-links {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 235.4%;
+    letter-spacing: 0.96px;
+}
+
+.social-links {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    width: fit-content;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border-radius:20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.external-links {
+    align-self: stretch;
+}
+
+.sub-sites {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub-site-logo {
+    transform: scale(90%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.52);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        height: calc(100vh - 70px);
+        align-items: start;
+    }
+
+    .nav-link {
+        margin-top: 1rem !important;
+    }
+
+    .nav-button {
+        padding: 0 !important;
+        background: transparent;
+        color: #000;
+        font-weight: 100;
+        box-shadow: unset;
+        backdrop-filter: unset;
+        -webkit-backdrop-filter: unset;
+        border: 0;
+    }
+
+    .nav-button svg {
+        display: none;
+    }
+
+    .nav-button:hover {
+        color: #0277bd;
+        box-shadow: unset;
+        border: 0;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+
+    h1{
+        font-size: xx-large;
+    }
+    
+    .footer-content,
+    .footer-links,
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .external-links, .page-links{
+        align-self: flex-start;
+    }
+
+    .external-links{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .contact-card{
+        padding: 2rem 2rem;
+    }
+
+    .contact-card-logo{
+        margin-right: 0;
+    }
+
+    .seperator {
+        min-height: 2px;
+        min-width: 100px;
+        width: 100%;
+    }
+
+    .sub-sites{
+        align-items: center;
+        
+    }
+
+    .sub-sites h4{
+        display: none;
+    }
+
+    .social-links{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        align-self: center;
+        margin-top: 2rem;
+    }
+
+    .social-link{
+        width: 40px;
+        height: 40px;
+    }
+
+}
